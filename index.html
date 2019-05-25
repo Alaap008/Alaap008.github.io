@@ -9,13 +9,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Alaap</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
 </head>
 
 <body>
+
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
         /**
@@ -47,7 +48,7 @@
                         console.error("Error loading GAPI client for API", err);
                     });
         }
-
+        // Make sure the client is loaded and sign-in is complete before calling this method.
         function execute() {
             return gapi.client.youtube.search.list({
                     "part": "snippet",
@@ -70,7 +71,7 @@
     </script>
     <button onclick="authenticate().then(loadClient)">authorize and load</button>
     <button onclick="execute()">execute</button>
-    <script src="" async defer></script>
+
 </body>
 
 </html>
