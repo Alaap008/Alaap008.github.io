@@ -1,0 +1,590 @@
+.header-nav {
+  backdrop-filter: blur(10px);
+  background-color: #0f172af2;
+}
+
+.nav-link {
+  transition: all .3s;
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  background-color: #10b981;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.mobile-menu {
+  animation: .3s ease-out slideDown;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-title-reveal {
+  animation: 1s ease-out forwards titleReveal;
+}
+
+.animate-subtitle-reveal {
+  animation: 1s ease-out .3s forwards subtitleReveal;
+}
+
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-30px)scale(.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)scale(1);
+  }
+}
+
+@keyframes subtitleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-item {
+  transition: all .6s ease-out;
+}
+
+.animate-skill-reveal {
+  animation: .8s ease-out forwards skillReveal;
+}
+
+@keyframes skillReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-50px)scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0)scale(1);
+  }
+}
+
+.animate-icon-bounce {
+  animation: .6s ease-out forwards iconBounce;
+}
+
+@keyframes iconBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0)rotate(-180deg);
+  }
+
+  60% {
+    transform: scale(1.2)rotate(10deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)rotate(0);
+  }
+}
+
+.animate-text-slide {
+  animation: .6s ease-out forwards textSlide;
+}
+
+@keyframes textSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-percentage-count {
+  animation: .8s ease-out forwards percentageCount;
+}
+
+@keyframes percentageCount {
+  from {
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-skill-bar-fill {
+  position: relative;
+}
+
+.animate-skill-bar-fill:before {
+  content: "";
+  background: linear-gradient(90deg, #0000, #fff6, #0000);
+  width: 100%;
+  height: 100%;
+  animation: 2s ease-in-out infinite skillBarShine;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes skillBarShine {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: 2s ease-in-out infinite shimmer;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-indicator-slide {
+  animation: .5s ease-out forwards indicatorSlide;
+}
+
+@keyframes indicatorSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-50%)translateY(-10px)scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%)translateY(0)scale(1);
+  }
+}
+
+.animate-description-fade {
+  animation: .6s ease-out forwards descriptionFade;
+}
+
+@keyframes descriptionFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: 4s ease-in-out infinite float;
+}
+
+@keyframes float {
+  0%, 100% {
+    opacity: .3;
+    transform: translateY(0)rotate(0);
+  }
+
+  25% {
+    opacity: .7;
+    transform: translateY(-20px)rotate(90deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-10px)rotate(180deg);
+  }
+
+  75% {
+    opacity: .5;
+    transform: translateY(-30px)rotate(270deg);
+  }
+}
+
+.skill-item:hover {
+  transition: transform .3s;
+  transform: translateX(10px);
+}
+
+.skill-item:hover .animate-icon-bounce {
+  animation: .5s ease-in-out infinite alternate iconHover;
+}
+
+@keyframes iconHover {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.skill-item:hover .animate-skill-bar-fill {
+  transition: box-shadow .3s;
+  box-shadow: 0 0 15px #10b98180;
+}
+
+.animate-fade-in {
+  animation: 1s ease-out fadeIn;
+}
+
+.animate-fade-in-delay {
+  animation: 1s ease-out .3s both fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-line {
+  height: 0;
+  transition: height 2s ease-out;
+}
+
+.animate-timeline-grow {
+  height: 100%;
+}
+
+.timeline-item {
+  transition: all .6s ease-out;
+}
+
+.animate-slide-in {
+  animation: .8s ease-out forwards slideInFromSide;
+}
+
+@keyframes slideInFromSide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.timeline-dot {
+  transition: all .5s ease-out;
+}
+
+.animate-dot-pop {
+  animation: .6s ease-out forwards dotPop;
+}
+
+@keyframes dotPop {
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-card-slide {
+  animation: .8s ease-out forwards cardSlideUp;
+}
+
+@keyframes cardSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px)scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)scale(1);
+  }
+}
+
+.animate-badge-bounce {
+  animation: .6s ease-out forwards badgeBounce;
+}
+
+@keyframes badgeBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0)rotate(-180deg);
+  }
+
+  60% {
+    transform: scale(1.1)rotate(10deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1)rotate(0);
+  }
+}
+
+.animate-text-reveal {
+  animation: .6s ease-out forwards textReveal;
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur();
+    transform: translateY(0);
+  }
+}
+
+.animate-achievement-slide {
+  animation: .5s ease-out forwards achievementSlide;
+}
+
+@keyframes achievementSlide {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-final-dot {
+  animation: 1s ease-out forwards finalDotGlow;
+}
+
+@keyframes finalDotGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    box-shadow: 0 0 #10b981b3;
+  }
+
+  50% {
+    opacity: .8;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 20px #10b98180;
+  }
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px)scale(1.02);
+  box-shadow: 0 20px 40px #10b9811a;
+}
+
+.timeline-card:hover .animate-pulse {
+  animation-duration: .5s;
+}
+
+@media (width <= 768px) {
+  @keyframes slideInFromSide {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .skill-item:hover {
+    transform: none;
+  }
+}
+
+.timeline-card {
+  opacity: 0;
+  animation: .6s ease-out forwards timelineSlideIn;
+  transform: translateY(30px);
+}
+
+.timeline-card:nth-child(2n) {
+  animation-delay: .2s;
+}
+
+.timeline-card:nth-child(odd) {
+  animation-delay: .4s;
+}
+
+@keyframes timelineSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-line {
+  height: 0;
+  animation: 2s ease-out forwards timelineGrow;
+}
+
+@keyframes timelineGrow {
+  to {
+    height: 100%;
+  }
+}
+
+.timeline-dot {
+  animation: .5s ease-out forwards dotPop;
+  transform: scale(0);
+}
+
+.timeline-dot:first-child {
+  animation-delay: .5s;
+}
+
+.timeline-dot:nth-child(2) {
+  animation-delay: .8s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #10b981, #059669);
+  transition: all .3s;
+  box-shadow: 0 4px 15px #10b9814d;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #10b98166;
+}
+
+.btn-outline {
+  border: 2px solid #10b981;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-outline:before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(135deg, #10b981, #059669);
+  width: 100%;
+  height: 100%;
+  transition: left .3s;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+
+.btn-outline:hover:before {
+  left: 0;
+}
+
+.project-card {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px #0000004d;
+}
+
+.skill-bar {
+  animation: 1.5s ease-out fillBar;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--skill-level);
+  }
+}
+
+.section-fade-in {
+  animation: .8s ease-out fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (width <= 768px) {
+  .timeline-card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/*# sourceMappingURL=alaap-portfolio.e381b9d5.css.map */
