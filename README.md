@@ -219,4 +219,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Built with ❤️ by Alaap Banerjee**
 
-*Frontend-focused Full Stack Developer passionate about creating exceptional user experiences*
+*Frontend-focused Full Stack Developer passionate about creating exceptional user experiences* 
