@@ -4,7 +4,7 @@
   "homepage": "https://Alaap008.github.io",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url /",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "gh-pages": "^6.3.0",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.8.3",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.2"
