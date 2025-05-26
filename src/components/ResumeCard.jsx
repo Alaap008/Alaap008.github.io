@@ -10,7 +10,7 @@ export default function ResumeCard() {
         Frontend developer with 4+ years of experience. Skilled in ReactJS, Angular, TypeScript, Node.js, Redux, and AWS.
       </p>
       <a
-        href="#"
+        href="https://drive.google.com/file/d/15axISKawv_JGobGkO8djVNmD2Eq24ged/view?usp=sharing"
         className="border border-green-500 text-green-500 px-6 py-2 hover:bg-green-500 hover:text-white transition"
       >
         Download Resume
