@@ -160,11 +160,11 @@
       });
     }
   }
-})({"cvUrC":[function(require,module,exports,__globalThis) {
+})({"7xKES":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 53800;
+var HMR_SERVER_PORT = 58333;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -24954,6 +24954,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _hero = require("./components/Hero");
 var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _about = require("./components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
 var _resumeCard = require("./components/ResumeCard");
 var _resumeCardDefault = parcelHelpers.interopDefault(_resumeCard);
 var _skills = require("./components/Skills");
@@ -24973,7 +24975,7 @@ function App() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -24981,44 +24983,49 @@ function App() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 16,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeCardDefault.default), {}, void 0, false, {
-                        fileName: "src/App.jsx",
                         lineNumber: 17,
-                        columnNumber: 7
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 18,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 18,
-                        columnNumber: 7
+                        lineNumber: 19,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experienceDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 19,
-                        columnNumber: 7
+                        lineNumber: 20,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 20,
-                        columnNumber: 7
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeCardDefault.default), {}, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 22,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 21,
-                        columnNumber: 7
+                        lineNumber: 23,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 22,
-                        columnNumber: 7
+                        lineNumber: 24,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 15,
-                columnNumber: 3
+                lineNumber: 16,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);
@@ -25032,7 +25039,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/Hero":"6Bk7b","./components/ResumeCard":"iF8SJ","./components/Skills":"6Dlx7","./components/Portfolio":"ldTno","./components/Experience":"dbjEa","./components/Contact":"d75GN","./components/Footer":"lU1xT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Header":"8BCUx"}],"6Bk7b":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/Hero":"6Bk7b","./components/ResumeCard":"iF8SJ","./components/Skills":"6Dlx7","./components/Portfolio":"ldTno","./components/Experience":"dbjEa","./components/Contact":"d75GN","./components/Footer":"lU1xT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Header":"8BCUx","./components/About":"aOGfJ"}],"6Bk7b":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$604a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$604a.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -25050,40 +25057,196 @@ var _reactTypeAnimation = require("react-type-animation");
 function Hero() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "hero",
-        className: "min-h-screen flex flex-col items-center justify-center text-center bg-slate-700",
+        className: "min-h-screen flex flex-col items-center justify-center text-center bg-slate-700 relative overflow-hidden",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-4xl md:text-5xl font-extrabold mb-4 text-white",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactTypeAnimation.TypeAnimation), {
-                    sequence: [
-                        "I'm Alaap Banerjee",
-                        1000,
-                        "I'm a Full Stack Developer",
-                        1000,
-                        "I'm a Leader",
-                        1000
-                    ],
-                    speed: 50,
-                    repeat: Infinity,
-                    style: {
-                        display: 'inline-block'
-                    }
-                }, void 0, false, {
-                    fileName: "src/components/Hero.jsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, this)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute inset-0 overflow-hidden",
+                children: [
+                    ...Array(20)
+                ].map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "absolute w-2 h-2 bg-green-400 rounded-full opacity-20 animate-float",
+                        style: {
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                            animationDelay: `${i * 0.5}s`,
+                            animationDuration: `${3 + Math.random() * 2}s`
+                        }
+                    }, i, false, {
+                        fileName: "src/components/Hero.jsx",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, this))
             }, void 0, false, {
                 fileName: "src/components/Hero.jsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-lg text-gray-300",
-                children: "Frontend-focused Full Stack Developer"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "relative z-10 max-w-4xl mx-auto px-6",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-5xl md:text-7xl font-extrabold mb-6 text-white",
+                        children: "Hello World."
+                    }, void 0, false, {
+                        fileName: "src/components/Hero.jsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "text-2xl md:text-4xl font-bold mb-8 text-green-400",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactTypeAnimation.TypeAnimation), {
+                            sequence: [
+                                "I'm Alaap Banerjee",
+                                2000,
+                                "I'm a Full Stack Developer",
+                                2000,
+                                "I'm a Frontend Specialist",
+                                2000,
+                                "I'm a Problem Solver",
+                                2000
+                            ],
+                            speed: 50,
+                            repeat: Infinity,
+                            style: {
+                                display: 'inline-block'
+                            }
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/Hero.jsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed",
+                        children: "Frontend-focused Full Stack Developer with 4+ years of experience building scalable web applications"
+                    }, void 0, false, {
+                        fileName: "src/components/Hero.jsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex flex-col sm:flex-row gap-4 justify-center mb-12",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#portfolio",
+                                className: "bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg",
+                                children: "View My Work"
+                            }, void 0, false, {
+                                fileName: "src/components/Hero.jsx",
+                                lineNumber: 55,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#contact",
+                                className: "border-2 border-green-500 text-green-500 px-8 py-3 rounded-lg font-semibold hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-105",
+                                children: "Get In Touch"
+                            }, void 0, false, {
+                                fileName: "src/components/Hero.jsx",
+                                lineNumber: 61,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Hero.jsx",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex justify-center space-x-6",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "http://linkedin.com/in/alaap-banerjee-818201144",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "text-gray-400 hover:text-green-400 transition-colors duration-300 transform hover:scale-110",
+                                "aria-label": "LinkedIn",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-8 h-8",
+                                    fill: "currentColor",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Hero.jsx",
+                                        lineNumber: 79,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 78,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/Hero.jsx",
+                                lineNumber: 71,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "https://github.com/alaap008",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "text-gray-400 hover:text-green-400 transition-colors duration-300 transform hover:scale-110",
+                                "aria-label": "GitHub",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-8 h-8",
+                                    fill: "currentColor",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Hero.jsx",
+                                        lineNumber: 90,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 89,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/Hero.jsx",
+                                lineNumber: 82,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "mailto:alaapbanerjee08@gmail.com",
+                                className: "text-gray-400 hover:text-green-400 transition-colors duration-300 transform hover:scale-110",
+                                "aria-label": "Email",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-8 h-8",
+                                    fill: "currentColor",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h1.82L12 11.64l8.545-7.819h1.82c.904 0 1.636.732 1.636 1.636z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Hero.jsx",
+                                        lineNumber: 99,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 98,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/Hero.jsx",
+                                lineNumber: 93,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Hero.jsx",
+                        lineNumber: 70,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Hero.jsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, this)
         ]
@@ -28037,42 +28200,400 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 function ResumeCard() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "resume",
         className: "bg-slate-900 p-10 text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "inline-block border border-green-500 p-4 rounded-full mb-6",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "text-green-500 font-bold text-2xl",
-                    children: "A"
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-4xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "inline-block border border-green-500 p-6 rounded-full mb-8 bg-slate-800",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-green-500 font-bold text-4xl",
+                        children: "A"
+                    }, void 0, false, {
+                        fileName: "src/components/ResumeCard.jsx",
+                        lineNumber: 8,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/components/ResumeCard.jsx",
                     lineNumber: 7,
                     columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-white mb-6",
+                    children: "RESUME"
+                }, void 0, false, {
+                    fileName: "src/components/ResumeCard.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid md:grid-cols-3 gap-8 mb-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-3xl font-bold text-green-400 mb-2",
+                                    children: "4+"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 15,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-gray-300",
+                                    children: "Years of Experience"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 16,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-3xl font-bold text-green-400 mb-2",
+                                    children: "500+"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 19,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-gray-300",
+                                    children: "Users Impacted"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-3xl font-bold text-green-400 mb-2",
+                                    children: "95%"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-gray-300",
+                                    children: "Performance Improvement"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 24,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ResumeCard.jsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed",
+                    children: "Senior Frontend Developer with 4+ years of experience specializing in ReactJS, Angular, TypeScript, and Node.js. Proven track record of optimizing performance, reducing build times by 95%, and delivering scalable solutions that serve hundreds of users. Expert in modern web technologies, CI/CD pipelines, and agile development practices."
+                }, void 0, false, {
+                    fileName: "src/components/ResumeCard.jsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid md:grid-cols-2 gap-6 mb-8 text-left max-w-2xl mx-auto",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-lg font-semibold text-white mb-3",
+                                    children: "Core Expertise"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 36,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    className: "space-y-2 text-gray-300",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 39,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "Frontend Development (React, Angular)"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 38,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 43,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "Full-Stack Development (Node.js)"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 47,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "Performance Optimization"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 46,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 51,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "CI/CD & DevOps"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 50,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-lg font-semibold text-white mb-3",
+                                    children: "Key Achievements"
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    className: "space-y-2 text-gray-300",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 61,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "95% build time reduction"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 60,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 65,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "73% support ticket reduction"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 64,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 69,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "500+ users system implementation"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 68,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            className: "flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-500 mr-2",
+                                                    children: "\u2022"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/ResumeCard.jsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "GDPR compliance implementation"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/ResumeCard.jsx",
+                                            lineNumber: 72,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ResumeCard.jsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col sm:flex-row gap-4 justify-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "/resume-alaap-banerjee.pdf",
+                            download: "Alaap_Banerjee_Resume.pdf",
+                            className: "bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-5 h-5 mr-2",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round",
+                                        strokeWidth: 2,
+                                        d: "M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/ResumeCard.jsx",
+                                        lineNumber: 87,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/ResumeCard.jsx",
+                                    lineNumber: 86,
+                                    columnNumber: 13
+                                }, this),
+                                "Download Resume"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 81,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "#contact",
+                            className: "border-2 border-green-500 text-green-500 px-8 py-3 rounded-lg font-semibold hover:bg-green-500 hover:text-white transition-all duration-300 transform hover:scale-105",
+                            children: "Get In Touch"
+                        }, void 0, false, {
+                            fileName: "src/components/ResumeCard.jsx",
+                            lineNumber: 91,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ResumeCard.jsx",
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mt-8 text-sm text-gray-400",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "\uD83D\uDCCD Pune, India \u2022 \uD83D\uDCE7 alaapbanerjee08@gmail.com \u2022 \uD83D\uDCF1 +91 8617471399"
+                    }, void 0, false, {
+                        fileName: "src/components/ResumeCard.jsx",
+                        lineNumber: 100,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/ResumeCard.jsx",
+                    lineNumber: 99,
+                    columnNumber: 9
                 }, this)
-            }, void 0, false, {
-                fileName: "src/components/ResumeCard.jsx",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-300 mb-4 max-w-2xl mx-auto",
-                children: "Frontend developer with 4+ years of experience. Skilled in ReactJS, Angular, TypeScript, Node.js, Redux, and AWS."
-            }, void 0, false, {
-                fileName: "src/components/ResumeCard.jsx",
-                lineNumber: 9,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#",
-                className: "border border-green-500 text-green-500 px-6 py-2 hover:bg-green-500 hover:text-white transition",
-                children: "Download Resume"
-            }, void 0, false, {
-                fileName: "src/components/ResumeCard.jsx",
-                lineNumber: 12,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "src/components/ResumeCard.jsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "src/components/ResumeCard.jsx",
         lineNumber: 5,
         columnNumber: 5
@@ -28177,6 +28698,7 @@ function Skills() {
         return ()=>observer.disconnect();
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "skills",
         ref: sectionRef,
         className: "skills-section bg-slate-800 px-6 py-20",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28187,7 +28709,7 @@ function Skills() {
                     children: "PROFESSIONAL"
                 }, void 0, false, {
                     fileName: "src/components/Skills.jsx",
-                    lineNumber: 60,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28195,7 +28717,7 @@ function Skills() {
                     children: "My knowledge level in software"
                 }, void 0, false, {
                     fileName: "src/components/Skills.jsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28222,7 +28744,7 @@ function Skills() {
                                                     children: skill.icon
                                                 }, void 0, false, {
                                                     fileName: "src/components/Skills.jsx",
-                                                    lineNumber: 79,
+                                                    lineNumber: 80,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28233,13 +28755,13 @@ function Skills() {
                                                     children: skill.name
                                                 }, void 0, false, {
                                                     fileName: "src/components/Skills.jsx",
-                                                    lineNumber: 83,
+                                                    lineNumber: 84,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 78,
+                                            lineNumber: 79,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28250,13 +28772,13 @@ function Skills() {
                                             children: visibleSkills.has(index) ? `${skill.level}%` : '0%'
                                         }, void 0, false, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 88,
+                                            lineNumber: 89,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 77,
+                                    lineNumber: 78,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28277,25 +28799,25 @@ function Skills() {
                                                         className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Skills.jsx",
-                                                        lineNumber: 108,
+                                                        lineNumber: 109,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "absolute inset-0 bg-gradient-to-r from-green-400/50 to-green-600/50 animate-pulse"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Skills.jsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 112,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Skills.jsx",
-                                                lineNumber: 98,
+                                                lineNumber: 99,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 96,
+                                            lineNumber: 97,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28307,13 +28829,13 @@ function Skills() {
                                             }
                                         }, void 0, false, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 116,
+                                            lineNumber: 117,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 95,
+                                    lineNumber: 96,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28324,18 +28846,18 @@ function Skills() {
                                     children: getSkillDescription(skill.name)
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 127,
+                                    lineNumber: 128,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, skill.name, true, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 69,
+                            lineNumber: 70,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "src/components/Skills.jsx",
-                    lineNumber: 67,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28352,18 +28874,18 @@ function Skills() {
                             }
                         }, i, false, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 138,
+                            lineNumber: 139,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "src/components/Skills.jsx",
-                    lineNumber: 136,
+                    lineNumber: 137,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/Skills.jsx",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 7
         }, this)
     }, void 0, false, {
@@ -28409,58 +28931,525 @@ parcelHelpers.export(exports, "default", ()=>Portfolio);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const projects = [
+    {
+        id: 1,
+        title: "Sahitya",
+        subtitle: "A Github for Authors",
+        description: "A collaborative writing platform for authors, essentially a GitHub for writing projects. Features version control for manuscripts, collaborative editing, and project management tools to help authors overcome writer's block and work together seamlessly.",
+        technologies: [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Socket.io",
+            "Express"
+        ],
+        features: [
+            "Real-time collaborative editing",
+            "Version control for manuscripts",
+            "Project management dashboard",
+            "Author collaboration tools"
+        ],
+        githubLink: "https://github.com/alaap008/sahitya",
+        liveLink: "https://sahitya-demo.netlify.app",
+        image: "/api/placeholder/400/250"
+    },
+    {
+        id: 2,
+        title: "Bulk Image Tool",
+        subtitle: "Automated Image Processing",
+        description: "A powerful tool for bulk image updates and processing for e-commerce platforms. Handles 500+ SKUs with background processing, saving users over 4 hours per week. Features automated resizing, format conversion, and batch operations.",
+        technologies: [
+            "Angular",
+            "Node.js",
+            "AWS S3",
+            "BullMQ",
+            "Sharp"
+        ],
+        features: [
+            "Bulk image processing for 500+ SKUs",
+            "Background job processing",
+            "Automated resizing and optimization",
+            "Progress tracking and notifications"
+        ],
+        githubLink: "https://github.com/alaap008/bulk-image-tool",
+        liveLink: "#",
+        image: "/api/placeholder/400/250"
+    },
+    {
+        id: 3,
+        title: "Catalogue Listing Module",
+        subtitle: "Dynamic E-commerce Solution",
+        description: "Rewritten catalogue listing module with dynamic validation and enhanced user experience. Reduced ZenDesk support tickets by 73% through improved UX and robust error handling. Features advanced filtering, search, and real-time updates.",
+        technologies: [
+            "Angular",
+            "TypeScript",
+            "RxJS",
+            "NgRx",
+            "SCSS"
+        ],
+        features: [
+            "Dynamic form validation",
+            "Advanced filtering and search",
+            "Real-time data updates",
+            "73% reduction in support tickets"
+        ],
+        githubLink: "https://github.com/alaap008/catalogue-module",
+        liveLink: "#",
+        image: "/api/placeholder/400/250"
+    },
+    {
+        id: 4,
+        title: "Approval Module",
+        subtitle: "Workflow Management System",
+        description: "Comprehensive approval workflow system for price and promotion changes. Streamlined the review process, cutting manual review time by 60%. Features role-based permissions, automated notifications, and audit trails.",
+        technologies: [
+            "React",
+            "Redux",
+            "Node.js",
+            "PostgreSQL",
+            "JWT"
+        ],
+        features: [
+            "Role-based approval workflows",
+            "60% reduction in review time",
+            "Automated notifications",
+            "Complete audit trail"
+        ],
+        githubLink: "https://github.com/alaap008/approval-module",
+        liveLink: "#",
+        image: "/api/placeholder/400/250"
+    }
+];
 function Portfolio() {
+    _s();
+    const [selectedProject, setSelectedProject] = (0, _react.useState)(null);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "portfolio",
-        className: "bg-slate-700 px-6 py-20 text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-3xl font-bold mb-2",
-                children: "PORTFOLIO"
-            }, void 0, false, {
-                fileName: "src/components/Portfolio.jsx",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-400 mb-8",
-                children: "My latest work"
-            }, void 0, false, {
-                fileName: "src/components/Portfolio.jsx",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-center gap-6 flex-wrap",
-                children: [
-                    "Sahitya",
-                    "Bulk Image Tool",
-                    "Catalogue Listing"
-                ].map((proj, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-slate-800 w-64 h-40 flex items-center justify-center text-white shadow",
-                        children: [
-                            "PROJECT 0",
-                            i + 1,
-                            ": ",
-                            proj
-                        ]
-                    }, i, true, {
+        className: "bg-slate-700 px-6 py-20",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-7xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-center mb-4 text-white",
+                    children: "MY PROJECTS"
+                }, void 0, false, {
+                    fileName: "src/components/Portfolio.jsx",
+                    lineNumber: 76,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-gray-400 mb-4",
+                    children: "Every project that I work on is a milestone to learning a new technology."
+                }, void 0, false, {
+                    fileName: "src/components/Portfolio.jsx",
+                    lineNumber: 77,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-green-400 mb-16 italic",
+                    children: "Building solutions that make a difference"
+                }, void 0, false, {
+                    fileName: "src/components/Portfolio.jsx",
+                    lineNumber: 78,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid md:grid-cols-2 lg:grid-cols-2 gap-8",
+                    children: projects.map((project, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-slate-600 hover:border-green-500",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "h-48 bg-slate-600 relative overflow-hidden",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "absolute inset-0 bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-4xl font-bold text-white mb-2",
+                                                    children: [
+                                                        "PROJECT ",
+                                                        String(index + 1).padStart(2, '0')
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 90,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-green-400 font-semibold",
+                                                    children: project.title
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 91,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 89,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Portfolio.jsx",
+                                        lineNumber: 88,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 87,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "mb-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    className: "text-xl font-bold text-white mb-1",
+                                                    children: project.title
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 99,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: "text-green-400 text-sm font-semibold mb-3",
+                                                    children: project.subtitle
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 100,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: "text-gray-300 text-sm leading-relaxed",
+                                                    children: project.description
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 101,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 98,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "mb-4",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex flex-wrap gap-2",
+                                                children: project.technologies.map((tech, techIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "px-2 py-1 bg-slate-700 text-green-400 text-xs rounded-full border border-green-500/30",
+                                                        children: tech
+                                                    }, techIndex, false, {
+                                                        fileName: "src/components/Portfolio.jsx",
+                                                        lineNumber: 108,
+                                                        columnNumber: 23
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "src/components/Portfolio.jsx",
+                                                lineNumber: 106,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 105,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "mb-6",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                    className: "text-sm font-semibold text-white mb-2",
+                                                    children: "Key Features:"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 120,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                    className: "space-y-1",
+                                                    children: project.features.slice(0, 2).map((feature, featureIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                            className: "text-xs text-gray-400 flex items-start",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    className: "text-green-500 mr-2 mt-1",
+                                                                    children: "\u2022"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Portfolio.jsx",
+                                                                    lineNumber: 124,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                feature
+                                                            ]
+                                                        }, featureIndex, true, {
+                                                            fileName: "src/components/Portfolio.jsx",
+                                                            lineNumber: 123,
+                                                            columnNumber: 23
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 121,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 119,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex gap-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: project.githubLink,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "flex-1 bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-600 transition-colors duration-300 text-center border border-slate-600 hover:border-green-500",
+                                                    children: "View Code"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 133,
+                                                    columnNumber: 19
+                                                }, this),
+                                                project.liveLink !== "#" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: project.liveLink,
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "flex-1 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-600 transition-colors duration-300 text-center",
+                                                    children: "Live Demo"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 142,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    onClick: ()=>setSelectedProject(project),
+                                                    className: "px-4 py-2 border border-green-500 text-green-500 rounded-lg text-sm font-semibold hover:bg-green-500 hover:text-white transition-all duration-300",
+                                                    children: "Learn More"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 132,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 97,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, project.id, true, {
+                            fileName: "src/components/Portfolio.jsx",
+                            lineNumber: 82,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/components/Portfolio.jsx",
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, this),
+                selectedProject && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "bg-slate-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "p-6",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex justify-between items-start mb-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                    className: "text-2xl font-bold text-white",
+                                                    children: selectedProject.title
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 170,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: "text-green-400 font-semibold",
+                                                    children: selectedProject.subtitle
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 171,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 169,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            onClick: ()=>setSelectedProject(null),
+                                            className: "text-gray-400 hover:text-white text-2xl",
+                                            children: "\xd7"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 173,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 168,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-gray-300 mb-6 leading-relaxed",
+                                    children: selectedProject.description
+                                }, void 0, false, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 181,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mb-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: "text-lg font-semibold text-white mb-3",
+                                            children: "Technologies Used"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 184,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex flex-wrap gap-2",
+                                            children: selectedProject.technologies.map((tech, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "px-3 py-1 bg-slate-700 text-green-400 rounded-full border border-green-500/30",
+                                                    children: tech
+                                                }, index, false, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 187,
+                                                    columnNumber: 23
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 185,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 183,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mb-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: "text-lg font-semibold text-white mb-3",
+                                            children: "Key Features"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 195,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                            className: "space-y-2",
+                                            children: selectedProject.features.map((feature, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                    className: "text-gray-300 flex items-start",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-green-500 mr-3 mt-1",
+                                                            children: "\u2022"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Portfolio.jsx",
+                                                            lineNumber: 199,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        feature
+                                                    ]
+                                                }, index, true, {
+                                                    fileName: "src/components/Portfolio.jsx",
+                                                    lineNumber: 198,
+                                                    columnNumber: 23
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 196,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 194,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex gap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: selectedProject.githubLink,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "flex-1 bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-600 transition-colors duration-300 text-center",
+                                            children: "View on GitHub"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 207,
+                                            columnNumber: 19
+                                        }, this),
+                                        selectedProject.liveLink !== "#" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: selectedProject.liveLink,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-300 text-center",
+                                            children: "Live Demo"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Portfolio.jsx",
+                                            lineNumber: 216,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Portfolio.jsx",
+                                    lineNumber: 206,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Portfolio.jsx",
+                            lineNumber: 167,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
                         fileName: "src/components/Portfolio.jsx",
-                        lineNumber: 10,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "src/components/Portfolio.jsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+                        lineNumber: 166,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/Portfolio.jsx",
+                    lineNumber: 165,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Portfolio.jsx",
+            lineNumber: 75,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "src/components/Portfolio.jsx",
-        lineNumber: 5,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }
+_s(Portfolio, "HN9pdtfYpwVsoSKTsDvm2nr85II=");
 _c = Portfolio;
 var _c;
 $RefreshReg$(_c, "Portfolio");
@@ -28744,85 +29733,600 @@ parcelHelpers.export(exports, "default", ()=>Contact);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
 function Contact() {
+    _s();
+    const [formData, setFormData] = (0, _react.useState)({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = (0, _react.useState)(false);
+    const [submitStatus, setSubmitStatus] = (0, _react.useState)('');
+    const handleChange = (e)=>{
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        setIsSubmitting(true);
+        // Simulate form submission
+        setTimeout(()=>{
+            setIsSubmitting(false);
+            setSubmitStatus('Thank you! Your message has been sent successfully.');
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+            // Clear success message after 5 seconds
+            setTimeout(()=>setSubmitStatus(''), 5000);
+        }, 1000);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "contact",
-        className: "bg-slate-800 px-6 py-20 text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-3xl font-bold mb-4",
-                children: "CONTACT"
-            }, void 0, false, {
-                fileName: "src/components/Contact.jsx",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "mb-2",
-                children: "alaapbanerjee08@gmail.com"
-            }, void 0, false, {
-                fileName: "src/components/Contact.jsx",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "mb-6",
-                children: "+91 8617471399"
-            }, void 0, false, {
-                fileName: "src/components/Contact.jsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                className: "max-w-xl mx-auto grid gap-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        placeholder: "Name",
-                        className: "p-2 rounded bg-slate-700 text-white"
-                    }, void 0, false, {
-                        fileName: "src/components/Contact.jsx",
-                        lineNumber: 10,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "email",
-                        placeholder: "Email",
-                        className: "p-2 rounded bg-slate-700 text-white"
-                    }, void 0, false, {
-                        fileName: "src/components/Contact.jsx",
-                        lineNumber: 11,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                        placeholder: "Message",
-                        className: "p-2 rounded bg-slate-700 text-white"
-                    }, void 0, false, {
-                        fileName: "src/components/Contact.jsx",
-                        lineNumber: 12,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "bg-green-500 px-4 py-2 text-white rounded hover:bg-green-600",
-                        children: "Send"
-                    }, void 0, false, {
-                        fileName: "src/components/Contact.jsx",
-                        lineNumber: 13,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Contact.jsx",
-                lineNumber: 9,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+        className: "bg-slate-800 px-6 py-20",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-center mb-4 text-white",
+                    children: "KEEP IN TOUCH"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-gray-400 mb-16",
+                    children: "For any collaboration or queries, contact me"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.jsx",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid md:grid-cols-2 gap-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "space-y-8",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "text-2xl font-semibold text-white mb-6",
+                                            children: "Let's Connect"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 44,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-gray-300 leading-relaxed mb-8",
+                                            children: "I'm always interested in discussing new opportunities, innovative projects, and ways to create impactful solutions. Whether you're looking for a collaborator, have a project in mind, or just want to connect, I'd love to hear from you."
+                                        }, void 0, false, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Contact.jsx",
+                                    lineNumber: 43,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "space-y-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center space-x-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "w-12 h-12 bg-green-500 rounded-full flex items-center justify-center",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "w-6 h-6 text-white",
+                                                        fill: "none",
+                                                        stroke: "currentColor",
+                                                        viewBox: "0 0 24 24",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                            strokeLinecap: "round",
+                                                            strokeLinejoin: "round",
+                                                            strokeWidth: 2,
+                                                            d: "M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 57,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 56,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 55,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-white font-semibold",
+                                                            children: "Email"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 61,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                            href: "mailto:alaapbanerjee08@gmail.com",
+                                                            className: "text-green-400 hover:text-green-300 transition-colors",
+                                                            children: "alaapbanerjee08@gmail.com"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 62,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 60,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 54,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center space-x-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "w-12 h-12 bg-green-500 rounded-full flex items-center justify-center",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "w-6 h-6 text-white",
+                                                        fill: "none",
+                                                        stroke: "currentColor",
+                                                        viewBox: "0 0 24 24",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                            strokeLinecap: "round",
+                                                            strokeLinejoin: "round",
+                                                            strokeWidth: 2,
+                                                            d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 71,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 70,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 69,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-white font-semibold",
+                                                            children: "Phone"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 75,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                            href: "tel:+918617471399",
+                                                            className: "text-green-400 hover:text-green-300 transition-colors",
+                                                            children: "+91 8617471399"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 76,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 74,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 68,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center space-x-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "w-12 h-12 bg-green-500 rounded-full flex items-center justify-center",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "w-6 h-6 text-white",
+                                                        fill: "none",
+                                                        stroke: "currentColor",
+                                                        viewBox: "0 0 24 24",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.jsx",
+                                                                lineNumber: 85,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                strokeLinecap: "round",
+                                                                strokeLinejoin: "round",
+                                                                strokeWidth: 2,
+                                                                d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.jsx",
+                                                                lineNumber: 86,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 84,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 83,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-white font-semibold",
+                                                            children: "Location"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 90,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-green-400",
+                                                            children: "Pune, India"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 91,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 89,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 82,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Contact.jsx",
+                                    lineNumber: 53,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "pt-8 border-t border-slate-700",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: "text-lg font-semibold text-white mb-4",
+                                            children: "Follow Me"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 98,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex space-x-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "https://linkedin.com/in/alaap-banerjee",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-500 transition-all duration-300 transform hover:scale-110",
+                                                    "aria-label": "LinkedIn",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "w-6 h-6",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 24 24",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                            d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 108,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 107,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 100,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "https://github.com/alaap008",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-500 transition-all duration-300 transform hover:scale-110",
+                                                    "aria-label": "GitHub",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "w-6 h-6",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 24 24",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                            d: "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 119,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 118,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 111,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: "https://twitter.com/alaap008",
+                                                    target: "_blank",
+                                                    rel: "noopener noreferrer",
+                                                    className: "w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-500 transition-all duration-300 transform hover:scale-110",
+                                                    "aria-label": "Twitter",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "w-6 h-6",
+                                                        fill: "currentColor",
+                                                        viewBox: "0 0 24 24",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                            d: "M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 130,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 129,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 122,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 99,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Contact.jsx",
+                                    lineNumber: 97,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.jsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-slate-700 rounded-lg p-8",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-xl font-semibold text-white mb-6",
+                                    children: "Send me a message"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.jsx",
+                                    lineNumber: 139,
+                                    columnNumber: 13
+                                }, this),
+                                submitStatus && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mb-6 p-4 bg-green-500/20 border border-green-500 rounded-lg text-green-400",
+                                    children: submitStatus
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.jsx",
+                                    lineNumber: 142,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                    onSubmit: handleSubmit,
+                                    className: "space-y-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                    htmlFor: "name",
+                                                    className: "block text-sm font-medium text-gray-300 mb-2",
+                                                    children: "Your Name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 149,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                    type: "text",
+                                                    id: "name",
+                                                    name: "name",
+                                                    value: formData.name,
+                                                    onChange: handleChange,
+                                                    required: true,
+                                                    className: "w-full p-3 rounded-lg bg-slate-600 text-white border border-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-all duration-300",
+                                                    placeholder: "Enter your name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 152,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 148,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                    htmlFor: "email",
+                                                    className: "block text-sm font-medium text-gray-300 mb-2",
+                                                    children: "Your Email"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                    type: "email",
+                                                    id: "email",
+                                                    name: "email",
+                                                    value: formData.email,
+                                                    onChange: handleChange,
+                                                    required: true,
+                                                    className: "w-full p-3 rounded-lg bg-slate-600 text-white border border-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-all duration-300",
+                                                    placeholder: "Enter your email"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 168,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 164,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                    htmlFor: "message",
+                                                    className: "block text-sm font-medium text-gray-300 mb-2",
+                                                    children: "Your Message"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 181,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                                    id: "message",
+                                                    name: "message",
+                                                    value: formData.message,
+                                                    onChange: handleChange,
+                                                    required: true,
+                                                    rows: 5,
+                                                    className: "w-full p-3 rounded-lg bg-slate-600 text-white border border-slate-500 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-all duration-300 resize-none",
+                                                    placeholder: "Tell me about your project or just say hello!"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 184,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 180,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            type: "submit",
+                                            disabled: isSubmitting,
+                                            className: "w-full bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 disabled:bg-green-500/50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 flex items-center justify-center",
+                                            children: isSubmitting ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                        className: "animate-spin -ml-1 mr-3 h-5 w-5 text-white",
+                                                        xmlns: "http://www.w3.org/2000/svg",
+                                                        fill: "none",
+                                                        viewBox: "0 0 24 24",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                className: "opacity-25",
+                                                                cx: "12",
+                                                                cy: "12",
+                                                                r: "10",
+                                                                stroke: "currentColor",
+                                                                strokeWidth: "4"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.jsx",
+                                                                lineNumber: 204,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                className: "opacity-75",
+                                                                fill: "currentColor",
+                                                                d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.jsx",
+                                                                lineNumber: 205,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 203,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    "Sending..."
+                                                ]
+                                            }, void 0, true) : 'Send Message'
+                                        }, void 0, false, {
+                                            fileName: "src/components/Contact.jsx",
+                                            lineNumber: 196,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Contact.jsx",
+                                    lineNumber: 147,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.jsx",
+                            lineNumber: 138,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.jsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Contact.jsx",
+            lineNumber: 36,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "src/components/Contact.jsx",
-        lineNumber: 5,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }
+_s(Contact, "z5bYGhJhnP4g9VUuEeJrdU6nMMM=");
 _c = Contact;
 var _c;
 $RefreshReg$(_c, "Contact");
@@ -28847,16 +30351,393 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 function Footer() {
+    const scrollToTop = ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-        className: "text-center py-4 bg-slate-900 text-gray-500",
-        children: [
-            "\xa9 ",
-            new Date().getFullYear(),
-            " Alaap Banerjee. All rights reserved."
-        ]
-    }, void 0, true, {
+        className: "bg-slate-900 text-gray-400 py-8 border-t border-slate-800",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto px-6",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid md:grid-cols-3 gap-8 mb-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "space-y-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex items-center space-x-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "w-10 h-10 border border-green-500 rounded-full flex items-center justify-center",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-green-500 font-bold text-lg",
+                                                children: "A"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 16,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 15,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-white font-semibold text-lg",
+                                            children: "Alaap Banerjee"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 18,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 14,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-sm leading-relaxed",
+                                    children: "Frontend-focused Full Stack Developer passionate about creating impactful solutions and optimizing user experiences."
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 13,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-white font-semibold mb-4",
+                                    children: "Quick Links"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                    className: "space-y-2 text-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#hero",
+                                                className: "hover:text-green-400 transition-colors duration-300",
+                                                children: "Home"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 31,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 30,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#about",
+                                                className: "hover:text-green-400 transition-colors duration-300",
+                                                children: "About"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 36,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 35,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#skills",
+                                                className: "hover:text-green-400 transition-colors duration-300",
+                                                children: "Skills"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 41,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 40,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#experience",
+                                                className: "hover:text-green-400 transition-colors duration-300",
+                                                children: "Experience"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 46,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#portfolio",
+                                                className: "hover:text-green-400 transition-colors duration-300",
+                                                children: "Portfolio"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 51,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 50,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                href: "#contact",
+                                                className: "hover:text-green-400 transition-colors duration-300",
+                                                children: "Contact"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 56,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 55,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 29,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 27,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    className: "text-white font-semibold mb-4",
+                                    children: "Get In Touch"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 65,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "space-y-2 text-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "\uD83D\uDCE7 alaapbanerjee08@gmail.com"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 67,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "\uD83D\uDCF1 +91 8617471399"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 68,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "\uD83D\uDCCD Pune, India"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 69,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 66,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex space-x-4 mt-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "https://linkedin.com/in/alaap-banerjee",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-500 transition-all duration-300",
+                                            "aria-label": "LinkedIn",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                className: "w-4 h-4",
+                                                fill: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Footer.jsx",
+                                                    lineNumber: 82,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 81,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 74,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "https://github.com/alaap008",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-500 transition-all duration-300",
+                                            "aria-label": "GitHub",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                className: "w-4 h-4",
+                                                fill: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Footer.jsx",
+                                                    lineNumber: 93,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 92,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 85,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "https://twitter.com/alaap008",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-green-500 transition-all duration-300",
+                                            "aria-label": "Twitter",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                className: "w-4 h-4",
+                                                fill: "currentColor",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Footer.jsx",
+                                                    lineNumber: 104,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Footer.jsx",
+                                                lineNumber: 103,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 96,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 73,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "text-sm",
+                            children: [
+                                "\xa9 ",
+                                new Date().getFullYear(),
+                                " Alaap Banerjee. All rights reserved."
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 113,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: scrollToTop,
+                            className: "mt-4 md:mt-0 flex items-center space-x-2 text-sm hover:text-green-400 transition-colors duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Back to Top"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 121,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-4 h-4 transform group-hover:-translate-y-1 transition-transform duration-300",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round",
+                                        strokeWidth: 2,
+                                        d: "M5 10l7-7m0 0l7 7m-7-7v18"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 128,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 122,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 117,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 112,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Footer.jsx",
+            lineNumber: 10,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "src/components/Footer.jsx",
-        lineNumber: 5,
+        lineNumber: 9,
         columnNumber: 5
     }, this);
 }
@@ -28891,12 +30772,24 @@ const navigation = [
         href: "#hero"
     },
     {
+        name: "About",
+        href: "#about"
+    },
+    {
+        name: "Skills",
+        href: "#skills"
+    },
+    {
         name: "Experience",
         href: "#experience"
     },
     {
         name: "Portfolio",
         href: "#portfolio"
+    },
+    {
+        name: "Resume",
+        href: "#resume"
     },
     {
         name: "Contact",
@@ -28917,7 +30810,7 @@ function Header() {
                                 children: "A"
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 18,
+                                lineNumber: 21,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28928,12 +30821,12 @@ function Header() {
                                         children: item.name.toUpperCase()
                                     }, item.name, false, {
                                         fileName: "src/components/Header.jsx",
-                                        lineNumber: 23,
+                                        lineNumber: 26,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 21,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28944,29 +30837,29 @@ function Header() {
                                         className: "w-6 h-6"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.jsx",
-                                        lineNumber: 35,
+                                        lineNumber: 38,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _outline.Bars3Icon), {
                                         className: "w-6 h-6"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.jsx",
-                                        lineNumber: 37,
+                                        lineNumber: 40,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 33,
+                                    lineNumber: 36,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/components/Header.jsx",
-                                lineNumber: 32,
+                                lineNumber: 35,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.jsx",
-                        lineNumber: 17,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react1.Disclosure).Panel, {
@@ -28980,24 +30873,24 @@ function Header() {
                                     children: item.name
                                 }, item.name, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 46,
+                                    lineNumber: 49,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 44,
+                            lineNumber: 47,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/components/Header.jsx",
-                        lineNumber: 43,
+                        lineNumber: 46,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true)
     }, void 0, false, {
         fileName: "src/components/Header.jsx",
-        lineNumber: 14,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -32605,6 +34498,372 @@ function XMarkIcon({ title, titleId, ...props }, svgRef) {
 const ForwardRef = /*#__PURE__*/ _react.forwardRef(XMarkIcon);
 exports.default = ForwardRef;
 
-},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"irmnC":[function() {},{}]},["cvUrC","gYcKb"], "gYcKb", "parcelRequire5b01", {}, null, null, "http://localhost:53800")
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aOGfJ":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$80ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$80ee.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$80ee.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>About);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function About() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        id: "about",
+        className: "bg-slate-800 px-6 py-20",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-3xl font-bold text-center mb-4 text-white",
+                    children: "ABOUT ME"
+                }, void 0, false, {
+                    fileName: "src/components/About.jsx",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-gray-400 mb-16",
+                    children: "Get to know me better"
+                }, void 0, false, {
+                    fileName: "src/components/About.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid md:grid-cols-2 gap-12 items-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex justify-center",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-80 h-80 bg-slate-700 rounded-full border-4 border-green-500 flex items-center justify-center",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-6xl text-green-500 font-bold",
+                                    children: "A"
+                                }, void 0, false, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 14,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/components/About.jsx",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "src/components/About.jsx",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "space-y-6",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-gray-300 leading-relaxed space-y-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                "I'm a ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-400 font-semibold",
+                                                    children: "Senior Software Developer"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 22,
+                                                    columnNumber: 23
+                                                }, this),
+                                                " with 4+ years of experience specializing in frontend development and full-stack solutions. Currently working at Anchanto, I've successfully upgraded legacy systems, implemented modern architectures, and delivered scalable solutions that serve hundreds of users."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 21,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                "My expertise lies in ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-400 font-semibold",
+                                                    children: "ReactJS, Angular, TypeScript, and Node.js"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 29,
+                                                    columnNumber: 38
+                                                }, this),
+                                                ", with a strong background in performance optimization and user experience enhancement. I've reduced build times by 95%, improved Lighthouse scores to 95+, and consistently delivered features that reduce support tickets and increase user satisfaction."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 28,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-400 font-semibold",
+                                                    children: "What drives me:"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 36,
+                                                    columnNumber: 17
+                                                }, this),
+                                                " I believe in writing clean, maintainable code and creating solutions that make a real impact. Whether it's automating processes, optimizing performance, or building intuitive user interfaces, I'm passionate about leveraging technology to solve complex problems."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 35,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "mt-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "text-xl font-semibold text-white mb-4",
+                                            children: "Key Strengths"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 45,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "grid grid-cols-2 gap-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex items-center space-x-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "w-2 h-2 bg-green-500 rounded-full"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 48,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-gray-300",
+                                                            children: "Problem Solving"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 49,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 47,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex items-center space-x-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "w-2 h-2 bg-green-500 rounded-full"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 52,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-gray-300",
+                                                            children: "Team Leadership"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 53,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 51,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex items-center space-x-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "w-2 h-2 bg-green-500 rounded-full"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 56,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-gray-300",
+                                                            children: "Performance Optimization"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 57,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 55,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex items-center space-x-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "w-2 h-2 bg-green-500 rounded-full"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 60,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-gray-300",
+                                                            children: "Code Quality"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/About.jsx",
+                                                            lineNumber: 61,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 46,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "grid grid-cols-3 gap-6 mt-8 pt-6 border-t border-slate-700",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-2xl font-bold text-green-400",
+                                                    children: "4+"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 69,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-sm text-gray-400",
+                                                    children: "Years Experience"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 70,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 68,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-2xl font-bold text-green-400",
+                                                    children: "500+"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-sm text-gray-400",
+                                                    children: "Users Impacted"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 74,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 72,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-2xl font-bold text-green-400",
+                                                    children: "95%"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 77,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-sm text-gray-400",
+                                                    children: "Performance Improvement"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/About.jsx",
+                                                    lineNumber: 78,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 76,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 67,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.jsx",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/About.jsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/About.jsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/components/About.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$80ee.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"irmnC":[function() {},{}]},["7xKES","gYcKb"], "gYcKb", "parcelRequire5b01", {}, null, null, "http://localhost:58333")
 
 //# sourceMappingURL=alaap-portfolio.ad93b51f.js.map

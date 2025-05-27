@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import ResumeCard from "./components/ResumeCard";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
@@ -12,15 +13,16 @@ export default function App() {
   return (
     <>
       <Header />
-  <div className="pt-20">
-      <Hero />
-      <ResumeCard />
-      <Skills />
-      <Experience />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </div>
+      <div className="pt-20">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Portfolio />
+        <ResumeCard />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }

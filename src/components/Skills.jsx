@@ -53,6 +53,7 @@ export default function Skills() {
 
   return (
     <section 
+      id="skills"
       ref={sectionRef}
       className="skills-section bg-slate-800 px-6 py-20"
     >
