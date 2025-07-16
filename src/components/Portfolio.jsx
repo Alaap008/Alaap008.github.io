@@ -3,65 +3,51 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Sahitya",
-    subtitle: "A Github for Authors",
-    description: "A collaborative writing platform for authors, essentially a GitHub for writing projects. Features version control for manuscripts, collaborative editing, and project management tools to help authors overcome writer's block and work together seamlessly.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
+    title: "Karz",
+    subtitle: "P2P Loan Application",
+    description: "A peer-to-peer loan application built on React, Node.js, and MySQL that uses Stripe API for payment processing and ranks people based on their CIBIL score. Features include SMS notifications for repayment reminders and a comprehensive credit scoring system.",
+    technologies: ["React", "Node.js", "MySQL", "Stripe API", "SMS Notifications"],
     features: [
-      "Real-time collaborative editing",
-      "Version control for manuscripts",
-      "Project management dashboard",
-      "Author collaboration tools"
+      "P2P loan processing with Stripe integration",
+      "CIBIL score-based user ranking",
+      "SMS notifications for repayment",
+      "Secure payment processing"
     ],
-    githubLink: "https://github.com/alaap008/sahitya",
-    liveLink: "https://sahitya-demo.netlify.app",
+    githubLink: "#",
+    liveLink: "#",
     image: "/api/placeholder/400/250"
   },
   {
     id: 2,
-    title: "Bulk Image Tool",
-    subtitle: "Automated Image Processing",
-    description: "A powerful tool for bulk image updates and processing for e-commerce platforms. Handles 500+ SKUs with background processing, saving users over 4 hours per week. Features automated resizing, format conversion, and batch operations.",
-    technologies: ["Angular", "Node.js", "AWS S3", "BullMQ", "Sharp"],
+    title: "Shopify Marketplace Connector",
+    subtitle: "DPD Ecommerce Platform Integration",
+    description: "Developed and deployed a production-ready Shopify marketplace connector app for DPD Ecommerce Platform that enables seamless integration between Shopify stores and the Anchanto Order Management System (OMS). Built using Remix framework with TypeScript, the app implements secure OAuth authentication, dynamic scope management, and real-time webhook processing for order synchronization.",
+    technologies: ["Remix", "TypeScript", "React", "Prisma ORM", "SQLite", "Docker", "AWS EC2", "Shopify API", "Winston logging", "Shopify Polaris", "App Bridge", "Node.js", "Vite", "GraphQL", "REST APIs", "HMAC authentication", "OAuth 2.0"],
     features: [
-      "Bulk image processing for 500+ SKUs",
-      "Background job processing",
-      "Automated resizing and optimization",
-      "Progress tracking and notifications"
+      "Secure credential exchange with HMAC authentication",
+      "Dynamic Shopify API scope management",
+      "Real-time webhook processing for order updates",
+      "Comprehensive logging system with Winston",
+      "Containerized deployment with Docker",
+      "Embedded Shopify app architecture"
     ],
-    githubLink: "https://github.com/alaap008/bulk-image-tool",
+    githubLink: "#",
     liveLink: "#",
     image: "/api/placeholder/400/250"
   },
   {
     id: 3,
-    title: "Catalogue Listing Module",
-    subtitle: "Dynamic E-commerce Solution",
-    description: "Rewritten catalogue listing module with dynamic validation and enhanced user experience. Reduced ZenDesk support tickets by 73% through improved UX and robust error handling. Features advanced filtering, search, and real-time updates.",
-    technologies: ["Angular", "TypeScript", "RxJS", "NgRx", "SCSS"],
+    title: "Netflix GPT",
+    subtitle: "AI-Powered Movie Recommendation",
+    description: "A Netflix-inspired movie recommendation platform powered by GPT that provides personalized movie suggestions based on user preferences and viewing history. Features include intelligent content filtering, user authentication, and a modern streaming interface.",
+    technologies: ["React", "Node.js", "OpenAI GPT", "Firebase", "Tailwind CSS"],
     features: [
-      "Dynamic form validation",
-      "Advanced filtering and search",
-      "Real-time data updates",
-      "73% reduction in support tickets"
+      "AI-powered movie recommendations",
+      "User authentication and profiles",
+      "Personalized content filtering",
+      "Modern streaming interface"
     ],
-    githubLink: "https://github.com/alaap008/catalogue-module",
-    liveLink: "#",
-    image: "/api/placeholder/400/250"
-  },
-  {
-    id: 4,
-    title: "Approval Module",
-    subtitle: "Workflow Management System",
-    description: "Comprehensive approval workflow system for price and promotion changes. Streamlined the review process, cutting manual review time by 60%. Features role-based permissions, automated notifications, and audit trails.",
-    technologies: ["React", "Redux", "Node.js", "PostgreSQL", "JWT"],
-    features: [
-      "Role-based approval workflows",
-      "60% reduction in review time",
-      "Automated notifications",
-      "Complete audit trail"
-    ],
-    githubLink: "https://github.com/alaap008/approval-module",
+    githubLink: "#",
     liveLink: "#",
     image: "/api/placeholder/400/250"
   }
@@ -130,27 +116,9 @@ export default function Portfolio() {
                 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-600 transition-colors duration-300 text-center border border-slate-600 hover:border-green-500"
-                  >
-                    View Code
-                  </a>
-                  {project.liveLink !== "#" && (
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-600 transition-colors duration-300 text-center"
-                    >
-                      Live Demo
-                    </a>
-                  )}
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className="px-4 py-2 border border-green-500 text-green-500 rounded-lg text-sm font-semibold hover:bg-green-500 hover:text-white transition-all duration-300"
+                    className="w-full px-4 py-2 border border-green-500 text-green-500 rounded-lg text-sm font-semibold hover:bg-green-500 hover:text-white transition-all duration-300"
                   >
                     Learn More
                   </button>

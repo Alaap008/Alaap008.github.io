@@ -79,8 +79,8 @@ export default function ResumeCard() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/resume-alaap-banerjee.pdf"
-            download="Alaap_Banerjee_Resume.pdf"
+            href="/src/assets/Alaap_Banerjee_2025.pdf"
+            download="Alaap_Banerjee_2025.pdf"
             className="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
