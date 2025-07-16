@@ -50,6 +50,22 @@ const projects = [
     githubLink: "#",
     liveLink: "#",
     image: "/api/placeholder/400/250"
+  },
+  {
+    id: 4,
+    title: "Sahitya",
+    subtitle: "A Github for Authors",
+    description: "A collaborative writing platform for authors, essentially a GitHub for writing projects. Features version control for manuscripts, collaborative editing, and project management tools to help authors overcome writer's block and work together seamlessly.",
+    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Express"],
+    features: [
+      "Real-time collaborative editing",
+      "Version control for manuscripts",
+      "Project management dashboard",
+      "Author collaboration tools"
+    ],
+    githubLink: "#",
+    liveLink: "#",
+    image: "/api/placeholder/400/250"
   }
 ];
 
@@ -67,7 +83,7 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <div 
               key={project.id}
-              className="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-slate-600 hover:border-green-500"
+              className="bg-slate-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-slate-600 hover:border-green-500 flex flex-col h-full"
             >
               {/* Project Image */}
               <div className="h-48 bg-slate-600 relative overflow-hidden">
@@ -80,7 +96,7 @@ export default function Portfolio() {
               </div>
               
               {/* Project Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <div className="mb-4">
                   <h3 className="text-xl font-bold text-white mb-1">{project.title}</h3>
                   <p className="text-green-400 text-sm font-semibold mb-3">{project.subtitle}</p>
@@ -115,7 +131,7 @@ export default function Portfolio() {
                 </div>
                 
                 {/* Action Buttons */}
-                <div className="flex gap-3">
+                <div className="flex gap-3 mt-auto">
                   <button
                     onClick={() => setSelectedProject(project)}
                     className="w-full px-4 py-2 border border-green-500 text-green-500 rounded-lg text-sm font-semibold hover:bg-green-500 hover:text-white transition-all duration-300"
