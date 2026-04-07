@@ -1,142 +1,96 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 const experiences = [
   {
-    period: "April 2024 – Present",
+    period: "April 2025 – Present",
     company: "Anchanto",
-    position: "Senior Software Developer (UI)",
+    position: "Team Lead - AI Platform Engineering",
     location: "Pune, India",
+    impact: "Leading development of an LLM-powered decision automation platform serving 2,000 customers and peak throughput of 1.5M orders per day.",
     achievements: [
-      "Upgraded Angular codebase from v9 to v14, modularized SCSS, and introduced reusable components; reduced build time by 95% (from 45 mins to 2 mins).",
-      "Implemented role-based access control for 500+ users, improving audit traceability and aligning with GDPR compliance.",
-      "Added Jest unit tests and configured CI/CD pipelines with AWS Amplify and Linter; decreased deployment issues by 40%.",
-      "Identified and resolved bottlenecks using Chrome DevTools, improving Lighthouse scores to 95+ and reducing load times.",
-      "Automated shipment dispatches using Node.js + BullMQ, scheduling jobs every 15 minutes with 3 retry attempts; enhanced reliability and cut support tickets.",
-      "Contributed to internal dev tooling and rapid architectural testing across multiple product teams."
+      "Replaced a 17-field manual rule configuration flow with an NLP-driven interface powered by GPT-4o-mini, reducing configuration time by about 80%.",
+      "Implemented a RAG-based retrieval solution using vector databases and semantic search, improving retrieval precision and reducing hallucinations in automated decisions by about 30%.",
+      "Engineered a hybrid rule-execution engine with deterministic Python execution combined with LLM inference for dynamic reasoning across nested and graph-based workflows.",
+      "Optimized prompt and model performance with instruction consolidation, structured output schemas, and caching, cutting token usage by 50% from 4K to 2K tokens per request.",
+      "Built real-time monitoring dashboards with Next.js, React, Open UI, SWR, and SSE for rule performance, confidence scores, and system health visibility.",
+      "Created internal developer tooling that integrated browser context and design tokens with AI code generation, cutting UI development cycle time by 35% and helping increase delivery scope by 40% without added headcount."
     ]
   },
   {
-    period: "May 2021 – April 2024",
+    period: "May 2021 – March 2025",
     company: "Anchanto",
-    position: "Software Developer (UI)",
+    position: "Software Engineer to Senior Software Engineer",
     location: "Pune, India",
+    impact: "Built ML pipelines and intelligent workflow systems that improved catalog ingestion, anomaly detection, and operational reliability.",
     achievements: [
-      "Created picker and packer features in the mobile app, increasing processing speed by 30% for 100+ warehouse users.",
-      "Developed an Approval Module for price and promotion changes, cutting manual review time by 60%.",
-      "Rewritten Catalogue Listing Module with dynamic validation, reducing ZenDesk tickets by 73%.",
-      "Built a bulk image update tool for 500+ SKUs using background processing, saving users over 4 hours/week.",
-      "Enabled RTL localization through Crowdin and deployed Arabic support for MENA market rollout."
+      "Developed an ML-driven product category classification system using Random Forest and Scikit-learn across 3,500+ SKU categories, reducing manual tagging effort by 60%.",
+      "Established end-to-end ML pipelines covering preprocessing, feature engineering, model training, cross-validation, and MLflow-based experiment tracking.",
+      "Delivered real-time model inference into catalog onboarding workflows via REST APIs, eliminating manual category assignment for more than 70% of new listings.",
+      "Engineered a statistical anomaly detection system to flag irregular order-processing and warehouse workflow patterns, reducing operational escalations by 30%.",
+      "Implemented a config-driven validation engine for multi-tenant catalog ingestion pipelines, improving data quality and reducing downstream ETL failures by 40%."
     ]
   }
 ];
 
 export default function Experience() {
-  const [visibleItems, setVisibleItems] = useState(new Set());
-  const [timelineVisible, setTimelineVisible] = useState(false);
-  const timelineRef = useRef(null);
-  const itemRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = entry.target.dataset.index;
-            if (index !== undefined) {
-              setVisibleItems(prev => new Set([...prev, parseInt(index)]));
-            }
-            if (entry.target.classList.contains('timeline-container')) {
-              setTimelineVisible(true);
-            }
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    // Observe timeline container
-    if (timelineRef.current) {
-      observer.observe(timelineRef.current);
-    }
-
-    // Observe each timeline item
-    itemRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section id="experience" className="bg-slate-900 px-6 py-20">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-2 text-white animate-fade-in">EXPERIENCE</h2>
-        <p className="text-center text-gray-400 mb-16 animate-fade-in-delay">My professional journey</p>
-        
-        <div 
-          ref={timelineRef}
-          className="timeline-container relative"
-          data-timeline-visible={timelineVisible}
-        >
-          {/* Animated Timeline Line */}
-          <div className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-0.5 bg-green-500 timeline-line ${timelineVisible ? 'animate-timeline-grow' : ''}`}></div>
-          
-          {experiences.map((exp, index) => (
-            <div 
-              key={index} 
-              ref={el => itemRefs.current[index] = el}
-              data-index={index}
-              className={`relative mb-16 ${index % 2 === 0 ? 'md:ml-auto md:pl-12' : 'md:mr-auto md:pr-12'} md:w-1/2 timeline-item ${visibleItems.has(index) ? 'animate-slide-in' : 'opacity-0'}`}
-              style={{ animationDelay: `${index * 0.3}s` }}
-            >
-              {/* Animated Timeline Dot */}
-              <div className={`absolute left-6 md:left-auto md:right-auto w-4 h-4 bg-green-500 rounded-full border-4 border-slate-900 z-10 timeline-dot
-                              md:transform md:translate-x-1/2 md:right-1/2 ${visibleItems.has(index) ? 'animate-dot-pop' : 'scale-0'}`}
-                   style={{ animationDelay: `${index * 0.3 + 0.2}s` }}>
-              </div>
-              
-              {/* Animated Experience Card */}
-              <div className={`ml-16 md:ml-0 bg-slate-800 rounded-lg p-6 shadow-lg border border-slate-700 hover:border-green-500 transition-all duration-500 timeline-card hover:transform hover:scale-105 ${visibleItems.has(index) ? 'animate-card-slide' : ''}`}
-                   style={{ animationDelay: `${index * 0.3 + 0.4}s` }}>
-                
-                {/* Animated Period Badge */}
-                <div className={`inline-block bg-green-500 text-slate-900 px-3 py-1 rounded-full text-sm font-semibold mb-4 transform transition-all duration-300 ${visibleItems.has(index) ? 'animate-badge-bounce' : ''}`}
-                     style={{ animationDelay: `${index * 0.3 + 0.6}s` }}>
-                  {exp.period}
+    <section id="experience" className="section-shell">
+      <div className="section-inner">
+        <div className="section-intro fade-in-up">
+          <div className="section-kicker">Experience</div>
+          <h2 className="section-title">Experience centered on AI platforms, ML systems, and decision automation.</h2>
+          <p className="section-copy">
+            My recent work combines LLM application engineering, retrieval systems, inference optimization,
+            ML pipeline design, and the platform thinking required to run these systems reliably at enterprise scale.
+          </p>
+        </div>
+
+        <div className="experience-timeline relative pl-10">
+          <div className="timeline-line"></div>
+
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <article
+                key={`${exp.company}-${exp.period}`}
+                className="relative fade-in-up"
+                style={{ animationDelay: `${index * 120}ms` }}
+              >
+                <div className="timeline-dot"></div>
+
+                <div className="glass-panel experience-panel rounded-[1.9rem] p-7 sm:p-8">
+                  <div className="experience-header flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+                    <div className="min-w-0">
+                      <div className="experience-period inline-flex rounded-full border border-brand-400/25 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-200">
+                        {exp.period}
+                      </div>
+                      <h3 className="experience-title mt-4 text-2xl font-semibold text-white">
+                        {exp.position}
+                      </h3>
+                      <p className="mt-2 text-base text-accent-400">{exp.company}</p>
+                      <p className="mt-1 text-sm uppercase tracking-[0.18em] text-slate-500">
+                        {exp.location}
+                      </p>
+                    </div>
+
+                    <p className="experience-impact max-w-md text-sm leading-7 text-slate-300">
+                      {exp.impact}
+                    </p>
+                  </div>
+
+                  <ul className="experience-list mt-8 grid gap-4">
+                    {exp.achievements.map((achievement) => (
+                      <li
+                        key={achievement}
+                        className="surface-card experience-item rounded-[1.25rem] border border-slate-800/70 px-5 py-4 text-sm leading-7 text-slate-300"
+                      >
+                        <span className="mr-3 inline-block h-2 w-2 rounded-full bg-brand-300"></span>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                
-                {/* Company & Position with staggered animation */}
-                <h3 className={`text-xl font-bold text-white mb-1 ${visibleItems.has(index) ? 'animate-text-reveal' : 'opacity-0'}`}
-                    style={{ animationDelay: `${index * 0.3 + 0.8}s` }}>
-                  {exp.company}
-                </h3>
-                <h4 className={`text-lg text-green-400 mb-1 ${visibleItems.has(index) ? 'animate-text-reveal' : 'opacity-0'}`}
-                    style={{ animationDelay: `${index * 0.3 + 1.0}s` }}>
-                  {exp.position}
-                </h4>
-                <p className={`text-gray-400 text-sm mb-4 ${visibleItems.has(index) ? 'animate-text-reveal' : 'opacity-0'}`}
-                   style={{ animationDelay: `${index * 0.3 + 1.2}s` }}>
-                  {exp.location}
-                </p>
-                
-                {/* Achievements with staggered reveal */}
-                <ul className="space-y-3">
-                  {exp.achievements.map((achievement, achIndex) => (
-                    <li key={achIndex} 
-                        className={`flex items-start text-gray-300 text-sm leading-relaxed ${visibleItems.has(index) ? 'animate-achievement-slide' : 'opacity-0 translate-x-4'}`}
-                        style={{ animationDelay: `${index * 0.3 + 1.4 + achIndex * 0.1}s` }}>
-                      <span className="text-green-500 mr-3 mt-1 flex-shrink-0 animate-pulse">•</span>
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-          
-          {/* Animated Timeline End Dot */}
-          <div className={`absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-green-500 rounded-full border-4 border-slate-900 z-10 ${timelineVisible ? 'animate-final-dot' : 'scale-0'}`}
-               style={{ animationDelay: '2s' }}>
+              </article>
+            ))}
           </div>
         </div>
       </div>

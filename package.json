@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "homepage": "https://Alaap008.github.io",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url /",
+    "start": "BROWSERSLIST_IGNORE_OLD_DATA=1 parcel src/index.html --open",
+    "build": "BROWSERSLIST_IGNORE_OLD_DATA=1 parcel build src/index.html --public-url /",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "framer-motion": "^12.38.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
