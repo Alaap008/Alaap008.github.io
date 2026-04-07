@@ -1,6 +1,7 @@
 import React from "react";
 
-const resumePdf = "/assets/Alaap_Banerjee_2025.pdf";
+const resumePdf =
+  "https://drive.google.com/file/d/1qe3RYhdTiqoam4ULERc2wfCbFI3pUsPK/view?usp=drive_link";
 
 const highlights = [
   "LLM-powered decision automation with GPT-4o and GPT-4o-mini",
@@ -71,8 +72,13 @@ export default function ResumeCard() {
                   >
                     Open resume
                   </a>
-                  <a href={resumePdf} download className="btn-secondary w-full">
-                    Download PDF
+                  <a
+                    href={resumePdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary w-full"
+                  >
+                    View in Drive
                   </a>
                 </div>
               </div>

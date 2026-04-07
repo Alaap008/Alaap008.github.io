@@ -19,8 +19,8 @@ const projects = [
       "Shipped exponential-backoff reconnect logic with permanent-error detection in the extension background worker.",
       "Published separate Chrome Web Store and npm packages with a shared protocol layer.",
     ],
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/Alaap008/golliath",
+    liveLink: "https://chromewebstore.google.com/detail/edlcafocggpoghlcjcpnpmciceiclikk?utm_source=item-share-cp",
     outcome: "Proves hands-on experience building AI-adjacent platform tooling, not just AI-powered UI features.",
   },
   {
@@ -41,8 +41,8 @@ const projects = [
       "Wrote and maintained 55 automated tests covering task flows, API behavior, session isolation, grading, and regressions.",
       "Deployed the environment with Docker and validated it end to end with real LLM calls on Hugging Face Spaces.",
     ],
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/Alaap008/selene",
+    liveLink: "https://huggingface.co/spaces/alaap08/openenv-support-agent",
     outcome: "Shows practical AI/ML platform instincts: evaluation, repeatability, deployment, and operational correctness.",
   },
   {
